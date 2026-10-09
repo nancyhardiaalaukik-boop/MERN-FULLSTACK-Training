@@ -7,31 +7,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <main class="login-wrapper">
     <section class="login-box">
       <h1>Create account</h1>
       <p class="subtitle">Fill in the details to get started</p>
-
       <form action="#" method="post" id="registerForm" novalidate>
         <div class="form-group">
           <label for="fullName">Full Name</label>
           <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
           <small class="error-msg" id="nameError"></small>
         </div>
-
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="you@example.com" required>
           <small class="error-msg" id="emailError"></small>
         </div>
-
         <div class="form-group">
           <label for="dob">Date of Birth</label>
           <input type="date" id="dob" name="dob" required>
           <small class="error-msg" id="dobError"></small>
         </div>
-
         <fieldset class="form-group gender-group">
           <legend>Gender</legend>
           <div class="gender-options">
@@ -41,7 +36,6 @@
           </div>
           <small class="error-msg" id="genderError"></small>
         </fieldset>
-
                 <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Create a password" required>
@@ -52,6 +46,13 @@
           <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
           <small class="error-msg" id="confirmError"></small>
         </div>
-
         <button type="submit" class="login-btn">Register</button>
       </form>
+      <p class="register-text">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>
