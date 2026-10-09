@@ -7,47 +7,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <main class="login-wrapper">
     <section class="login-box">
+
       <!-- Login view -->
       <div id="loginView" class="view">
         <h1>Welcome back</h1>
         <p class="subtitle">Please login to your account</p>
-        <form action="#" method="post" id="loginForm">
+
+        <form action="#" method="post" id="loginForm" novalidate>
           <div class="form-group">
             <label for="loginEmail">Email</label>
             <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required>
+            <small class="error-msg" id="loginEmailError"></small>
           </div>
+
           <div class="form-group">
             <label for="loginPassword">Password</label>
             <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+            <small class="error-msg" id="loginPasswordError"></small>
           </div>
+
           <button type="submit" class="login-btn">Login</button>
+          <p class="success-msg" id="loginSuccess"></p>
         </form>
+
         <p class="register-text">
           Don't have an account? <a href="#" id="showRegister">Register here</a>
         </p>
       </div>
+
       <!-- Register view -->
       <div id="registerView" class="view hidden">
         <h1>Create account</h1>
         <p class="subtitle">Fill in the details to get started</p>
+
         <form action="#" method="post" id="registerForm" class="register-form" novalidate>
           <div class="form-group">
             <label for="regName">Full Name</label>
             <input type="text" id="regName" name="fullName" placeholder="Your full name" required>
             <small class="error-msg" id="nameError"></small>
           </div>
+
           <div class="form-group">
             <label for="regEmail">Email</label>
             <input type="email" id="regEmail" name="email" placeholder="you@example.com" required>
             <small class="error-msg" id="emailError"></small>
           </div>
+
           <div class="form-group">
             <label for="regDob">Date of Birth</label>
             <input type="date" id="regDob" name="dob" required>
             <small class="error-msg" id="dobError"></small>
           </div>
+
           <fieldset class="form-group gender-group">
             <legend>Gender</legend>
             <div class="gender-options">
@@ -57,24 +71,31 @@
             </div>
             <small class="error-msg" id="genderError"></small>
           </fieldset>
+
           <div class="form-group">
             <label for="regPassword">Password</label>
             <input type="password" id="regPassword" name="password" placeholder="Create a password" required>
             <small class="error-msg" id="passwordError"></small>
           </div>
+
           <div class="form-group">
             <label for="regConfirm">Confirm Password</label>
             <input type="password" id="regConfirm" name="confirmPassword" placeholder="Re-enter your password" required>
             <small class="error-msg" id="confirmError"></small>
           </div>
+
           <button type="submit" class="login-btn">Register</button>
+          <p class="success-msg" id="registerSuccess"></p>
         </form>
+
         <p class="register-text">
           Already have an account? <a href="#" id="showLogin">Login here</a>
         </p>
       </div>
+
     </section>
   </main>
+
   <script src="app.js"></script>
 </body>
 </html>
