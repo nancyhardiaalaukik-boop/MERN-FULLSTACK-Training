@@ -1,3 +1,4 @@
+/* ---------- Common styles (login + register) ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@ body {
   background-color: #bdbabc;
   color: #101010;
 }
-/* centers the login box on the screen */
+/* centers the box on the screen */
 .login-wrapper {
   min-height: 100vh;
   display: flex;
@@ -81,7 +82,54 @@ body {
 .register-text a:hover {
   text-decoration: underline;
 }
-/* small screens */
+/* ---------- Registration page only ---------- */
+
+/* a little tight spacing because the form has more fields */
+.register-form .form-group {
+  margin-bottom: 10px;
+}
+/* empty space reserved for validation messages */
+.error-msg {
+  color: #c0392b;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+.form-group input.invalid {
+  border-color: #c0392b;
+}
+/* gender radio buttons */
+.gender-group {
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  min-width: 0;
+}
+.gender-group legend {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.gender-options {
+  display: flex;
+  gap: 20px;
+}
+.form-group .gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.form-group .gender-options input[type="radio"] {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* ---------- Small screens ---------- */
 @media (max-width: 480px) {
   .login-box {
     padding: 24px 18px;
