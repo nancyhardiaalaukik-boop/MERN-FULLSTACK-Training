@@ -6,8 +6,8 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #bdbabc;
-  color: #101010;
+  background-color: #efdcd3;
+  color: #2a2220;
 }
 /* centers the box on the screen */
 .login-wrapper {
@@ -18,7 +18,7 @@ body {
   padding: 20px;
 }
 .login-box {
-  background-color: #f6f6fc;
+  background-color: #fcf8f5;
   width: 100%;
   max-width: 380px;
   padding: 32px 28px;
@@ -32,7 +32,7 @@ body {
 }
 .subtitle {
   text-align: center;
-  color: #777;
+  color: #7a6a63;
   font-size: 14px;
   margin-bottom: 24px;
 }
@@ -49,7 +49,7 @@ body {
 .form-group input {
   padding: 10px 12px;
   font-size: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #c4573a;
   border-radius: 5px;
   outline: none;
 }
@@ -60,15 +60,15 @@ body {
   width: 100%;
   padding: 11px;
   font-size: 16px;
-  color: #eae4e4;
-  background-color: #4a6cf7;
+  color: #ffffff;
+  background-color: #c4573a;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 4px;
 }
 .login-btn:hover {
-  background-color: #3555d8;
+  background-color: #a34429;
 }
 .register-text {
   text-align: center;
@@ -76,7 +76,7 @@ body {
   margin-top: 20px;
 }
 .register-text a {
-  color: #4a6cf7;
+  color: #c4573a;
   text-decoration: none;
 }
 .register-text a:hover {
@@ -90,7 +90,7 @@ body {
 }
 /* empty space reserved for validation messages */
 .error-msg {
-  color: #c0392b;
+  color: #b00020;
   font-size: 12px;
   margin-top: 4px;
   min-height: 16px;
@@ -140,4 +140,10 @@ body {
 }
 .hidden {
   display: none;
+}
+.sucess-msg{
+   color:#1e8449;
+   font-size: 14px;
+   text-align: center;
+   margin-top: 10px;
 }

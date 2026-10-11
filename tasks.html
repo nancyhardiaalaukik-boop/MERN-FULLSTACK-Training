@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>TaskFlow</h2>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="tasks.html" class="active">Tasks</a>
+      </nav>
+      <a href="login.html" class="logout">Logout</a>
+    </aside>
+    <main class="main">
+      <header class="page-header">
+        <div>
+          <h1>My Tasks</h1>
+          <p class="subtitle">Keep track of everything you need to do.</p>
+        </div>
+        <button type="button" class="add-btn">+ Add Task</button>
+      </header>
+      <section class="task-list">
+        <article class="task-card">
+          <h3>Study HTML and CSS</h3>
+          <p>Revise forms, flexbox and grid before the next practice task.</p>
+          <span class="status pending">Pending</span>
+        </article>
+        <article class="task-card">
+          <h3>Work on login project</h3>
+          <p>Finish the validation and push the code to GitHub.</p>
+          <span class="status completed">Completed</span>
+        </article>
+        <article class="task-card">
+          <h3>Practice DSA</h3>
+          <p>Solve two array problems in C++ and note the approach.</p>
+          <span class="status pending">Pending</span>
+        </article>
+        <article class="task-card">
+          <h3>Revise JavaScript</h3>
+          <p>Go through DOM selection and event listeners once more.</p>
+          <span class="status completed">Completed</span>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
